@@ -1,6 +1,6 @@
 package com.fundamentosplatzi.springboot.fundamentos.bean;
 
-public class MyBeanWithPropertiesImplement implements MyBeanWithProperties{
+public class MyBeanWithPropertiesImplement implements MyBeanWithProperties {
 
     private String name;
     private String apellido;
@@ -12,6 +12,6 @@ public class MyBeanWithPropertiesImplement implements MyBeanWithProperties{
 
     @Override
     public String function() {
-        return name +"-"+ apellido;
+        return name + "-" + apellido;
     }
 }

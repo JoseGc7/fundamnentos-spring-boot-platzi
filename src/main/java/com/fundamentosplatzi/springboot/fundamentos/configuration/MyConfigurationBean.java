@@ -8,17 +8,17 @@ import org.springframework.context.annotation.Configuration;
 public class MyConfigurationBean {
 
     @Bean
-    public MyBean beanOperation(){
+    public MyBean beanOperation() {
         return new MyBean2Implement();
     }
 
     @Bean
-    public MyOperation beanOperationOperation(){
+    public MyOperation beanOperationOperation() {
         return new MyOperationImplement();
     }
 
     @Bean
-    public MyBeanWithDependency beanOperationOperationWithDependency(MyOperation myOperation){
+    public MyBeanWithDependency beanOperationOperationWithDependency(MyOperation myOperation) {
         return new MyBeanWithDependencyImplement(myOperation);
     }
 

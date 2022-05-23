@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ComponentTwoImplement implements ComponentDependency{
+public class ComponentTwoImplement implements ComponentDependency {
 
     @Override
     public void saludar() {

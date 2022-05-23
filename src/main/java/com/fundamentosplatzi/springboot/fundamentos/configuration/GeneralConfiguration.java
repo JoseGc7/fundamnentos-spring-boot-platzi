@@ -23,7 +23,7 @@ public class GeneralConfiguration {
     private String random;
 
     @Bean
-    public MyBeanWithProperties function(){
+    public MyBeanWithProperties function() {
         return new MyBeanWithPropertiesImplement(name, apellido);
     }
 }
