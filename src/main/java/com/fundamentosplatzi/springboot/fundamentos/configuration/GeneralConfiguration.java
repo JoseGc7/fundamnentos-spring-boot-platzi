@@ -1,6 +1,5 @@
 package com.fundamentosplatzi.springboot.fundamentos.configuration;
 
-import com.fundamentosplatzi.springboot.fundamentos.bean.MyBeanWithDependencyImplement;
 import com.fundamentosplatzi.springboot.fundamentos.bean.MyBeanWithProperties;
 import com.fundamentosplatzi.springboot.fundamentos.bean.MyBeanWithPropertiesImplement;
 import com.fundamentosplatzi.springboot.fundamentos.pojo.UserPojo;
@@ -33,7 +32,7 @@ public class GeneralConfiguration {
     @Bean
     public DataSource dataSource(){
         DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
-        dataSourceBuilder.driverClassName("org.h2.builder");
+        dataSourceBuilder.driverClassName("org.h2.Driver");
         dataSourceBuilder.url("jdbc:h2:mem:testdb");
         dataSourceBuilder.username("SA");
         dataSourceBuilder.password("");
